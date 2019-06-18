@@ -2,5 +2,5 @@
 
 ## Python
 
-- [Ex1](Ex1/) "hello"
-- [Ex2](Ex2/) Excelファイルの読み書き
+- [ex1](ex1/) "hello"
+- [ex2](ex2/) Excelファイルの読み書き
