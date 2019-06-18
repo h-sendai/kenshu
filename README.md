@@ -3,4 +3,5 @@
 ## Python
 
 - [ex1](ex1/) "hello"
-- [ex2](ex2/) Excelファイルの読み書き
+- [ex2](ex2/) ファイル読み書き
+- [ex3](ex3/) Excelファイルの読み書き
