@@ -29,3 +29,48 @@ Pythonプログラムを書いて、Excelファイルの読み書きを行う。
     File "<stdin>", line 1, in <module>
     ModuleNotFoundError: No module named 'openpyxlx'
     >>>
+
+## excelファイルを作る
+
+write-excel.py3を読んでみてどんなファイルができるか考える。
+実行してみる:
+
+    ./write-excel.py3
+
+newfile.xlsxというファイルができていると思うのでそれを
+共有フォルダにコピーする。
+
+    cp newfile.xlsx /media/sf_vboxsf/
+    
+ホスト環境側で、共有フォルダに指定したフォルダに移動し、
+newfile.xlsxをエクセルで開いて、エクセルで読めるxlsx
+ファイルであることを確認する。
+
+## excelファイルを読む
+
+read-excel.py3を実行して、pythonでもエクセルファイルが読める
+ことを確認する:
+
+    ./read-excel.py3
+
+## 余談
+
+xlsxファイルは普通にzipファイルなのでlinux上でunzipコマンドを
+使って中身を取り出すことができる:
+
+    unzip -l fileでzipファイル内の一覧をとれる
+    bash$ unzip -l new.xlsx
+    Archive:  new.xlsx
+      Length      Date    Time    Name
+    ---------  ---------- -----   ----
+          177  06-19-2019 14:22   docProps/app.xml
+          555  06-19-2019 14:22   docProps/core.xml
+        10140  06-19-2019 14:22   xl/theme/theme1.xml
+         1364  06-19-2019 14:22   xl/worksheets/sheet1.xml
+          838  06-19-2019 14:22   xl/styles.xml
+          531  06-19-2019 14:22   _rels/.rels
+          546  06-19-2019 14:22   xl/workbook.xml
+          504  06-19-2019 14:22   xl/_rels/workbook.xml.rels
+          975  06-19-2019 14:22   [Content_Types].xml
+    ---------                     -------
+        15630                     9 files
