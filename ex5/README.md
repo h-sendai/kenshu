@@ -1,5 +1,13 @@
 ## Webコンテンツの抜き出し
 
+
+Webコンテンツの切り取りにはBeautifulSoup4を使う。
+BeautilfulSoup4モジュールは標準ライブラリに
+入っていないので、pip3でインストールする。
+
+    $ sudo pip3 install beautilfulsoup4
+
+例として、
 東海村の本日の最高気温、最低気温の予想を
 https://tenki.jp/forecast/3/11/4010/8341/
 から切り取る。
