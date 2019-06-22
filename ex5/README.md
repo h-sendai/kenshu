@@ -4,8 +4,10 @@
 Webコンテンツの切り取りにはBeautifulSoup4を使う。
 BeautilfulSoup4モジュールは標準ライブラリに
 入っていないので、pip3でインストールする。
+HTMLの解析にlxmlを使うのでそれもインストールする。
 
     $ sudo pip3 install beautilfulsoup4
+    $ sudo pip3 install lxml
 
 例として、
 東海村の本日の最高気温、最低気温の予想を

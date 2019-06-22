@@ -12,9 +12,8 @@ import bs4
 r = requests.get('https://tenki.jp/forecast/3/11/4010/8341/')
 
 # BeautifulSoup4でhtmlを解析
-# 解析にはhtml.parserを使う
-# その他解析にはlxmlも使える
-soup = bs4.BeautifulSoup(r.content, 'html.parser')
+# htmlの解析にはlxmlを使う
+soup = bs4.BeautifulSoup(r.content, 'lxml')
 
 # 最高気温、最低気温の取り出し
 
