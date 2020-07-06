@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
 
 # 東海村本日、明日の予想最高最低気温を表示する。
 # https://tenki.jp/ からhtmlファイルを取得して
