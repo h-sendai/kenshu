@@ -15,7 +15,7 @@ Pythonプログラムを書いて、Excelファイルの読み書きを行う。
 プロンプト(>>>)でimport openpyxlと入力し、次のプロンプトがでれば
 使えるようになっている。
 
-    $ sudo pip3 install openpyxl
+    $ pip3 install openpyxl --user
     $ python3
     Python 3.7.3 (default, Apr 10 2019, 12:54:05)
     [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)] on linux

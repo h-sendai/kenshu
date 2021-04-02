@@ -6,8 +6,8 @@ BeautilfulSoup4モジュールは標準ライブラリに
 入っていないので、pip3でインストールする。
 HTMLの解析にlxmlを使うのでそれもインストールする。
 
-    $ sudo pip3 install beautilfulsoup4
-    $ sudo pip3 install lxml
+    $ pip3 install beautilfulsoup4 --user
+    $ pip3 install lxml --user
 
 例として、
 東海村の本日の最高気温、最低気温の予想を

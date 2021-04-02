@@ -5,7 +5,15 @@ pythonを使ってWebコンテンツを取得するプログラムを書く。
 使って書くと記述が大幅に簡略化されるので、それを使うことに
 する。
 
-    $ sudo pip3 install requests
+    $python3
+    >>> import requests (と入力する)
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    ModuleNotFoundError: No module named 'requests'
+
+といわれたらrequestモジュールが入っていないのでインストールする。
+
+    $ pip3 install requests --user
     (正常にセットされたかどうかインタラクティブシェルを起動して確認する)
     $ python3
     Python 3.7.3 (default, Apr 10 2019, 12:54:05)
