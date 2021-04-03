@@ -5,12 +5,9 @@ import sys
 import time
 
 def cat(filename):
-    try:
-        with open(filename, 'r') as f:
-            for line in f:
-                print(line, end = '')
-    except Exception as e:
-        print(e)
+    with open(filename, 'r') as f:
+        for line in f:
+            print(line, end = '')
 
 def main():
     for i in sys.argv[1:]:
