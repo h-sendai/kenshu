@@ -8,20 +8,21 @@ pip3もいろいろ更新されているのでここではCentOS 7付属のも�
 最新版をダウンロードして使うことにする。
 
 ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+% curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
 
 とするとhttps://bootstrap.pypa.io/get-pip.pyからgetpip.pyをダウンロードし、
 get-pip.pyというファイルに保存する。ダウンロード後これを走らせる:
 
 ```
-python3 get-pip.py --user
+% python3 get-pip.py --user
 ```
 
 ``--user``を指定するとシステム領域(/usrなど)ではなくホームディレクトリ以下に
 インストールされる。今回の場合、$HOME/.local/binなどが作られ、そのなかにpip3コマンドが入る。
 bashを使っているならPATHに$HOME/.local/binが入っているのでそのままでpip3コマンドが
-走る。
+走る。bashではなく他のシェルを使っている場合はPATHに追加するか
+$HOME/binからシンボリックリンクをはって対処する。
 
 どのpip3が実行されるかは``which pip3``、あるいは``which -a pip3``とするとわかる:
 
