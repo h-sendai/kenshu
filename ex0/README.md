@@ -11,8 +11,8 @@ pip3もいろいろ更新されているのでここではCentOS 7付属のも�
 % curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
 
-とするとhttps://bootstrap.pypa.io/get-pip.pyからgetpip.pyをダウンロードし、
-get-pip.pyというファイルに保存する。ダウンロード後これを走らせる:
+とすると``https://bootstrap.pypa.io/get-pip.py``から``getpip.py``をダウンロードし、
+``get-pip.py``というファイルに保存する。ダウンロード後これを走らせる:
 
 ```
 % python3 get-pip.py --user
@@ -42,10 +42,10 @@ $HOME/binからシンボリックリンクをはって対処する。
 - lxml
 
 ```
-% pip3 install requests
-% pip3 install openpyxl
-% pip3 install bs4
-% pip3 install lxml
+% pip3 install requests --user
+% pip3 install openpyxl --user
+% pip3 install bs4      --user
+% pip3 install lxml     --user
 ```
 
 これくらいなら手で打ってもOKだが、もっと大量にインストールするなら
@@ -57,10 +57,10 @@ $HOME/binからシンボリックリンクをはって対処する。
 # エラーがおきたらそこで終了する
 set -e 
 
-pip3 install requests
-pip3 install openpyxl
-pip3 install bs4
-pip3 install lxml
+pip3 install requests --user
+pip3 install openpyxl --user
+pip3 install bs4      --user
+pip3 install lxml     --user
 ```
 
 正常にモジュールがセットできかたどうか確認する:
