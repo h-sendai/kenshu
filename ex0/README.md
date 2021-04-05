@@ -7,14 +7,14 @@ pip3を使ってpython3モジュールをインストールする。
 pip3もいろいろ更新されているのでここではCentOS 7付属のものは使わず
 最新版をダウンロードして使うことにする。
 
-```
+```console
 % curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
 
 とすると``https://bootstrap.pypa.io/get-pip.py``から``getpip.py``をダウンロードし、
 ``get-pip.py``というファイルに保存する。ダウンロード後これを走らせる:
 
-```
+```console
 % python3 get-pip.py --user
 ```
 
@@ -26,7 +26,7 @@ $HOME/binからシンボリックリンクをはって対処する。
 
 どのpip3が実行されるかは``which pip3``、あるいは``which -a pip3``とするとわかる:
 
-```
+```console
 % which -a pip3
 ~/.local/bin/pip3
 /usr/bin/pip3
