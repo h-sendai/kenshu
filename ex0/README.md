@@ -34,6 +34,7 @@ drwxrwxr-x. 2 sendai sendai  38 Apr  6 09:46 ex4
 drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex5
 drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
 -rw-rw-r--. 1 sendai sendai 367 Apr  6 09:46 README.md
+[sendai@kenshu00 ~]$
 ```
 
 ## pip3コマンドのインストール
