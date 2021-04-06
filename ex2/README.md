@@ -98,7 +98,9 @@ for i in range(len(sys.argv)):
 [sendai@kenshu00 ex2]$
 ```
 
-## エラーの取り扱い
+### エラーの取り扱い
+
+人間が手で指定するものには間違いが入るかもしれない。
 
 存在しないファイルを指定するとエラーメッセージを出力して終了する:
 
@@ -111,8 +113,23 @@ FileNotFoundError: [Errno 2] No such file or directory: 'no-such-file'
 [sendai@kenshu00 ex2]$
 ```
 
-## 複数ファイルの取り扱い
+読めないファイルを指定してもエラーメッセージを出力して終了する:
 
+```console
+[sendai@kenshu00 ex2]$ ./read-file.py3 /etc/shadow
+Traceback (most recent call last):
+  File "./read-file.py3", line 5, in <module>
+    with open(sys.argv[1], 'r') as f:
+PermissionError: [Errno 13] Permission denied: '/etc/shadow'
+[sendai@kenshu00 ex2]$
+```
+
+いずれも``open()``でエラーになり即座に終了している。
+pythonではエラーをハンドリングするコードをいれていない場合は
+エラーがおきたら即座に終了する。そのさいbacktraceを出力し
+エラーがおきた場所を表示する。
+
+## 複数ファイルの取り扱い
 
 ### catコマンド
 
