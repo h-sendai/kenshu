@@ -1,4 +1,40 @@
-# Pythonモジュールのセットアップ
+# Pythonモジュールのセットアップ、ファイルのダウンロード
+
+## GitHubからファイルをダウンロード
+
+次のコマンドを実行して実習用ファイルをダウンロードする:
+
+(注)
+- ``[sendai@kenshu00 ~]$``はシェルのプロンプトで入力する必要はない。
+- ``[sendai@kenshu00 ~]$``の行を入力する。
+- 次の``[sendai@kenshu00 ~]$``までがコマンドの出力。
+
+```console
+[sendai@kenshu00 ~]$ git clone https://github.com/h-sendai/kenshu.git
+Cloning into 'kenshu'...
+remote: Enumerating objects: 54, done.
+remote: Counting objects: 100% (54/54), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 141 (delta 18), reused 42 (delta 11), pack-reused 87
+Receiving objects: 100% (141/141), 21.68 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (45/45), done.
+[sendai@kenshu00 ~]$
+```
+
+ls コマンドでkenshuというディレクトリの中身を見てみる:
+
+```console
+[sendai@kenshu00 ~]$ ls -l kenshu
+total 4
+drwxrwxr-x. 2 sendai sendai  23 Apr  6 09:46 ex0
+drwxrwxr-x. 2 sendai sendai  40 Apr  6 09:46 ex1
+drwxrwxr-x. 2 sendai sendai  99 Apr  6 09:46 ex2
+drwxrwxr-x. 2 sendai sendai  68 Apr  6 09:46 ex3
+drwxrwxr-x. 2 sendai sendai  38 Apr  6 09:46 ex4
+drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex5
+drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
+-rw-rw-r--. 1 sendai sendai 367 Apr  6 09:46 README.md
+```
 
 ## pip3コマンドのインストール
 

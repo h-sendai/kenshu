@@ -8,6 +8,7 @@ KEK TV会議システム Vidyoを使用する。
 
 ## Python
 
+- [ex0](ex0/) Pythonモジュールのセットアップ、ファイルのダウンロード
 - [ex1](ex1/) "hello"
 - [ex2](ex2/) ファイル読み書き
 - [ex3](ex3/) Excelファイルの読み書き
