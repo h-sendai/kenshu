@@ -21,36 +21,6 @@
 [sendai@kenshu00 ex2]$
 ```
 
-以下の仕様とする:
-
-- コマンド引数でファイル名を指定する
-- 表示するときには、先頭に行番号をプリントする
-
-```console
-[sendai@kenshu00 ex2]$ ./read-file.py3 sample0.txt
-1 1
-2 2
-3 3
-4 4
-5 5
-[sendai@kenshu00 ex2]$
-```
-
-## エラーの取り扱い
-
-存在しないファイルを指定するとエラーメッセージを出力して終了する:
-
-```console
-[sendai@kenshu00 ex2]$ ./read-file.py3 no-such-file
-Traceback (most recent call last):
-  File "./read-file.py3", line 7, in <module>
-    with open(sys.argv[1], 'r') as f:
-FileNotFoundError: [Errno 2] No such file or directory: 'no-such-file'
-[sendai@kenshu00 ex2]$
-```
-
-## 複数ファイルの取り扱い
-
 ### 準備
 
 pythonスクリプトではコマンド引数はsys.argv配列に入っている。
@@ -77,6 +47,41 @@ if __name__ == '__main__':
 1 file0
 2 file1
 ```
+
+以下の仕様とする:
+
+- コマンド引数でファイル名を指定する
+- 表示するときには、先頭に行番号をプリントする
+
+実装例: [read-file.py3](read-file.py)
+
+実行例:
+
+```console
+[sendai@kenshu00 ex2]$ ./read-file.py3 sample0.txt
+1 1
+2 2
+3 3
+4 4
+5 5
+[sendai@kenshu00 ex2]$
+```
+
+## エラーの取り扱い
+
+存在しないファイルを指定するとエラーメッセージを出力して終了する:
+
+```console
+[sendai@kenshu00 ex2]$ ./read-file.py3 no-such-file
+Traceback (most recent call last):
+  File "./read-file.py3", line 7, in <module>
+    with open(sys.argv[1], 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'no-such-file'
+[sendai@kenshu00 ex2]$
+```
+
+## 複数ファイルの取り扱い
+
 
 ### catコマンド
 
