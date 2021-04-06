@@ -23,7 +23,7 @@
 
 ## コード中にファイル名をいれておくコード
 
-その0
+[その0 (read-file-filename-0.py3)](read-file-filename-0.py3)
 
 ```console
 [sendai@kenshu00 ex2]$ ./read-file-filename-0.py3
@@ -45,8 +45,8 @@ lineの行末に改行コードが入っているのとprint()はデフォルト
 
 空行が入らないようにするには2とおりある(もっとあるかもしれない):
 
-- print()で改行コードを出力しないようにする(``end = ''``の追加)
-- lineから改行コードをとりのぞいてprint()を実行する
+- print()で改行コードを出力しないようにする(``end = ''``の追加) [(read-file-filename-1.py3)](read-file-filename-1.py3)
+- lineから改行コードをとりのぞいてprint()を実行する [(read-file-filename-2.py3)](read-file-filename-2.py3)
 
 続いてファイル名をコマンド引数で指定する方法を取り上げる。
 
