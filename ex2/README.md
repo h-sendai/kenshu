@@ -55,7 +55,7 @@ if __name__ == '__main__':
 - コマンド引数でファイル名を指定する
 - 表示するときには、先頭に行番号をプリントする
 
-実装例: [read-file.py3](read-file.py)
+実装例: [read-file.py3](read-file.py3)
 
 実行例:
 
