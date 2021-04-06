@@ -50,6 +50,8 @@ lineの行末に改行コードが入っているのとprint()はデフォルト
 
 続いてファイル名をコマンド引数で指定する方法を取り上げる。
 
+## ファイル名を引数で指定する
+
 ### 準備
 
 pythonスクリプトではコマンド引数はsys.argv配列に入っている。
@@ -74,24 +76,25 @@ for i in range(len(sys.argv)):
 2 file1
 ```
 
-## pythonでのファイルの読みかた
-
-以下の仕様とする:
-
-- コマンド引数でファイル名を指定する
-- 表示するときには、先頭に行番号をプリントする
+### 実装
 
 実装例: [read-file.py3](read-file.py3)
 
-実行例:
+実行してみたところ:
 
 ```console
 [sendai@kenshu00 ex2]$ ./read-file.py3 sample0.txt
-1 1
-2 2
-3 3
-4 4
-5 5
+1
+2
+3
+4
+5
+[sendai@kenshu00 ex2]$ ./read-file.py3 sample1.txt
+10
+20
+30
+40
+50
 [sendai@kenshu00 ex2]$
 ```
 
