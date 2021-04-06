@@ -9,7 +9,7 @@ hello.py3という文字列を表示するプログラムの例。
 
 ```console
 [sendai@kenshu00 ~]$ cd
-[sendai@kenshu00 ~]$ cd kenshu/
+[sendai@kenshu00 ~]$ cd kenshu
 [sendai@kenshu00 kenshu]$ cd ex1
 
 [sendai@kenshu00 ex1]$ ls -l
