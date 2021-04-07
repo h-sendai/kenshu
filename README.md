@@ -20,7 +20,8 @@ KEK TV会議システム Vidyoを使用する。
 #### Windowsを使うかた
 
 Windows PowerShellを起動しsshと打てば使えます。
-お好みによりTeraTermなどsshソフトウェアの利用もOKです。
+その他Windows Terminalをセットしsshを起動する、あるいは
+TeraTermなどsshソフトウェアを使うなどでもよいです。
 
 ## Python実習内容
 
