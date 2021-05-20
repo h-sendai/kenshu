@@ -137,6 +137,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import bs4
 >>> import lxml
 >>> quit() あるいはCtrl-d
-[sendai@localhost ~]$
+[sendai@kenshu00 ~]$
 ```
 
