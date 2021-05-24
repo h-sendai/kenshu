@@ -9,6 +9,12 @@
 - ``[sendai@kenshu00 ~]$``の行を入力する。
 - 次の``[sendai@kenshu00 ~]$``までがコマンドの出力。
 
+
+commmand:
+```console
+git clone https://github.com/h-sendai/kenshu.git
+```
+
 ```console
 [sendai@kenshu00 ~]$ git clone https://github.com/h-sendai/kenshu.git
 Cloning into 'kenshu'...
