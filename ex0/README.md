@@ -18,12 +18,12 @@ git clone https://github.com/h-sendai/kenshu.git
 ```console
 [sendai@kenshu00 ~]$ git clone https://github.com/h-sendai/kenshu.git
 Cloning into 'kenshu'...
-remote: Enumerating objects: 54, done.
-remote: Counting objects: 100% (54/54), done.
-remote: Compressing objects: 100% (37/37), done.
-remote: Total 141 (delta 18), reused 42 (delta 11), pack-reused 87
-Receiving objects: 100% (141/141), 21.68 KiB | 0 bytes/s, done.
-Resolving deltas: 100% (45/45), done.
+remote: Enumerating objects: 255, done.
+remote: Counting objects: 100% (168/168), done.
+remote: Compressing objects: 100% (108/108), done.
+remote: Total 255 (delta 87), reused 123 (delta 47), pack-reused 87
+Receiving objects: 100% (255/255), 34.84 KiB | 6.97 MiB/s, done.
+Resolving deltas: 100% (114/114), done.
 [sendai@kenshu00 ~]$
 ```
 
@@ -42,6 +42,10 @@ drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
 -rw-rw-r--. 1 sendai sendai 367 Apr  6 09:46 README.md
 [sendai@kenshu00 ~]$
 ```
+
+<!--
+get-pip.pyはpython 3.7が最小サポートバージョンになっているので
+get-pip.pyを使った最新版pip3のインストールはやめる。
 
 ## pip3コマンドのインストール
 
@@ -86,6 +90,7 @@ $HOME/binからシンボリックリンクをはって対処する。
 /usr/bin/pip3
 [sendai@kenshu00 ~]$
 ```
+-->
 
 ## pip3コマンドでpythonモジュールをセットアップ
 
