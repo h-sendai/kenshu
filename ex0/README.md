@@ -94,32 +94,25 @@ $HOME/binからシンボリックリンクをはって対処する。
 
 ## pip3コマンドでpythonモジュールをセットアップ
 
-続けて以下のpythonモジュールをインストールする:
+このリポジトリにあるpythonスクリプトは以下のモジュールを
+使用している。requests, lxmlはCentOS Stream 8にあったので
+すでに使えるようになっている。
+その他のモジュールはCentOS Stream 8にはないので
+追加でpip3コマンドを使ってインストールする。
 
-- requests
-- openpyxl
+- requests (これはすでに使えるようになっている)
+- lxml (これもすでに使えるようになっている)
+- openpyxl (これと次のbs4をpip3コマンドで追加する)
 - bs4
-- lxml
 
 ```console
-[sendai@kenshu00 ~]$ pip3 install requests --user
-Collecting requests
-  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
-Collecting idna<3,>=2.5
-  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)
-Collecting chardet<5,>=3.0.2
-  Using cached chardet-4.0.0-py2.py3-none-any.whl (178 kB)
-Collecting certifi>=2017.4.17
-  Using cached certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
-Collecting urllib3<1.27,>=1.21.1
-  Using cached urllib3-1.26.4-py2.py3-none-any.whl (153 kB)
-Installing collected packages: urllib3, idna, chardet, certifi, requests
-Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.4
-[sendai@kenshu00 ~]$ # 以下コマンドのみのせています
 [sendai@kenshu00 ~]$ pip3 install openpyxl --user
 [sendai@kenshu00 ~]$ pip3 install bs4      --user
-[sendai@kenshu00 ~]$ pip3 install lxml     --user
 ```
+
+``--user``を指定するとシステム領域(/usrなど)ではなくホームディレクトリ以下に
+インストールされる。今回の場合、$HOME/.local/lib/python3.6/site-packagesなどが作られ、そのなかに
+モジュールファイルが入る。
 
 これくらいなら手で打ってもOKだが、もっと大量にインストールするなら
 ファイルにシェルスクリプトとしてまとめておくと別のマシンでも使える。
@@ -130,18 +123,16 @@ Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1
 # エラーがおきたらそこで終了する
 set -e 
 
-pip3 install requests --user
 pip3 install openpyxl --user
 pip3 install bs4      --user
-pip3 install lxml     --user
 ```
 
 正常にモジュールがセットできかたどうか確認する:
 
 ```
 [sendai@kenshu00 ~]$ python3
-Python 3.6.8 (default, Nov 16 2020, 16:55:22)
-[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)] on linux
+Python 3.6.8 (default, Mar 25 2022, 11:15:52)
+[GCC 8.5.0 20210514 (Red Hat 8.5.0-10)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests
 >>> import openpyxl
@@ -150,4 +141,3 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> quit() あるいはCtrl-d
 [sendai@kenshu00 ~]$
 ```
-
