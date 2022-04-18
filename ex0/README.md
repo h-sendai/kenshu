@@ -47,7 +47,7 @@ drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
 
 pip3を使ってpython3モジュールをインストールする。
 
-pip3もいろいろ更新されているのでここではCentOS 7付属のものは使わず
+pip3もいろいろ更新されているのでここではCentOS Stream 8付属のものは使わず
 最新版をダウンロードして使うことにする。
 
 ```console
