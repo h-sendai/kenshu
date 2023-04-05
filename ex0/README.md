@@ -141,3 +141,25 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> quit() あるいはCtrl-d
 [sendai@kenshu00 ~]$
 ```
+
+すでにインストールしたモジュール一覧を取得する:
+
+```
+[sendai@kenshu00 ~]$ pip3 list
+OS付属パッケージでセットされたモジュールも表示される
+```
+
+ホームディレクトリ以下にインストールしたモジュール一覧を取得する:
+
+```
+[sendai@kenshu00 ~]$ pip3 list --user
+DEPRECATION: The default format will switch to columns in the future. 
+You can use --format=(legacy|columns) (or define a format=(legacy|columns)
+in your pip.conf under the [list] section) to disable this warning.
+beautifulsoup4 (4.12.0)
+bs4 (0.0.1)
+et-xmlfile (1.1.0)
+openpyxl (3.1.2)
+soupsieve (2.3.2.post1)
+```
+
