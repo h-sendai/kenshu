@@ -129,7 +129,7 @@ pip3 install bs4      --user
 
 正常にモジュールがセットできかたどうか確認する:
 
-```
+```console
 [sendai@kenshu00 ~]$ python3
 Python 3.6.8 (default, Mar 25 2022, 11:15:52)
 [GCC 8.5.0 20210514 (Red Hat 8.5.0-10)] on linux
@@ -144,14 +144,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 すでにインストールしたモジュール一覧を取得する:
 
-```
+```console
 [sendai@kenshu00 ~]$ pip3 list
 OS付属パッケージでセットされたモジュールも表示される
 ```
 
 ホームディレクトリ以下にインストールしたモジュール一覧を取得する:
 
-```
+```console
 [sendai@kenshu00 ~]$ pip3 list --user
 DEPRECATION: The default format will switch to columns in the future. 
 You can use --format=(legacy|columns) (or define a format=(legacy|columns)
