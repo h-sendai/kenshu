@@ -30,7 +30,7 @@ for i in range(1000):
 ## 実行例
 
 ```console
-e% ./create-data.py3 > data
+% ./create-data.py3 > data
 % ./histogram.py3 0 20 20 data
 0.000 1.000 0
 1.000 2.000 0
