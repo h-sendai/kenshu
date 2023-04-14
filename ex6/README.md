@@ -80,6 +80,6 @@ for i in range(10):
 
 ビン番号は単純に
 ```
-int(x - x_min) / bin_width)
+int((x - x_min) / bin_width)
 ```
 で計算している。
