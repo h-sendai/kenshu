@@ -1,0 +1,24 @@
+#!/usr/bin/gnuplot
+
+# 横軸年月日の設定
+set timefmt "%Y/%m/%d"
+set xdata time
+set format x "%m%d"
+# データファイルが , (comma) 区切りになっているのを指定
+set datafile separator ","
+
+# 出力ファイル形式をPNG、画像サイズを1200 x 800に指定
+set term pngcairo size 1200,800
+# 出力ファイル名の指定
+set output 'tsukuba-kion.png'
+# 横軸範囲の指定（指定しないと前後に余分な期間が追加される
+set xrange ["2023/1/1":"2023/12/31"]
+# グラフタイトルを指定
+set title '2023 Tsukuba Temperature (average, high, low)'
+set xlabel "2023年月日"
+set ylabel "℃"
+# プロット。グラフタイトルもつけてみる
+plot \
+    'tsukuba-kion.txt' u 1:5 w lp title 'high',\
+    'tsukuba-kion.txt' u 1:2 w lp title 'average',\
+    'tsukuba-kion.txt' u 1:8 w lp title 'low'
