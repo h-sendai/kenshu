@@ -153,4 +153,17 @@ root [0]
 となりコマンド入力待ちになる。ここではこれは使わず
 pythonを使ってプロットさせてみる。
 
+プログラムは[root-plot.py3](root-plot.py3)にある。
 
+```
+./root-plot.py3
+```
+
+とすると``histo.png``という画像ファイルができるので
+
+```
+cp histo.png ~/public_html
+```
+
+でコピーして http://kenshu00.kek.jp/~guestNN/ （NNは各自の番号）
+で見てみる。
