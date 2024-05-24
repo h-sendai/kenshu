@@ -89,3 +89,65 @@ gnuplot> plot [0:2*pi] sin(x)
 
 (注) xが0に近いときsin(x)はxで近似できるので手で書くときはそれを
 意識するときれいに書ける。pi/2付近もそんなにまるまっていないのに注意。
+
+### gnuplotでデータをプロット
+
+データプロットの例として
+つくば市の最高気温、平均気温、最低気温を
+気象庁からダウンロードしたデータ``tsukuba-kion.txt``を
+置いたのでプロットしてみる。
+
+プロットするプログラムは
+[plot-tsukuba-kion](plot-tsukuba-kion)として置いてある。
+
+```console
+./plot-tsukuba-kion
+```
+とすると、``tsukuba-kion.png``という画像ファイルができるので
+
+```console
+cp tsukuba-kion.png ~/public_html
+```
+
+でコピーしてウェブブラウザで
+http://kenshu00.kek.jp/~guestNN/
+でアクセスして見てみる(NNは各自の番号を代入する)。
+
+## ROOTでヒストグラム図を書く
+
+ROOT (https://root.cern/) は素粒子原子核関連でよく使われている解析ツール。
+
+### AlmaLinux 9でのセットアップ
+
+AlmaLinux用のROOTのパッケージはFedora Projectが運営している
+Extra Packages for Enterprise Linux (EPEL)リポジトリにある。
+セットアップするには
+
+```
+dnf install epel-release
+dnf update epel-release
+dnf install root
+```
+
+とする。実習用マシンにはすでに入っている。
+
+### 使い方
+
+``root``と入力すると
+```console
+% root
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.30/06                        https://root.cern |
+  | (c) 1995-2024, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Apr 25 2024, 00:00:00                 |
+  | From heads/master@tags/v6-30-06                                  |
+  | With g++ (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2)                |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'  |
+   ------------------------------------------------------------------
+root [0]
+
+```
+となりコマンド入力待ちになる。ここではこれは使わず
+pythonを使ってプロットさせてみる。
+
+
