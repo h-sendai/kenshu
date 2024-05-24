@@ -128,6 +128,8 @@ Extra Packages for Enterprise Linux (EPEL)リポジトリにある。
 dnf install epel-release
 dnf update epel-release
 dnf install root
+pythonを使ってプロットするなら
+dnf install python3-root
 ```
 
 とする。実習用マシンにはすでに入っている。
