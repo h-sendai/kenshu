@@ -41,7 +41,7 @@ ex6ではヒストグラムデータを自分で作ってみたが、
 
 ### グラフの作り方
 
-```
+```console
 % cd
 % cd public_html
 % gnuplot
