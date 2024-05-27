@@ -2,5 +2,5 @@
 
 import requests
 
-r = requests.get('http://esysinfo00.kek.jp/')
-print(r.text)
+r = requests.get('http://kenshu00.kek.jp/')
+print(r.content.decode())
