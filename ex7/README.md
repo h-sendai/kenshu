@@ -153,16 +153,40 @@ root [0]
 となりコマンド入力待ちになる。ここではこれは使わず
 pythonを使ってプロットさせてみる。
 
+### データの作成
+
+まずデータファイルを作る。プログラムは
+[create-data.py3](create-data.py3)にある。
+random.uniform()を使って平均 0.0、標準偏差 1.0の正規分布になるような
+データを作っている。
+
+```console
+% ./create-data.py3 data
+```
+
+と入力すると``data``というファイル名にデータを保存する。
+
+### プロットするプログラム
 プログラムは[root-plot.py3](root-plot.py3)にある。
 
 ```
-./root-plot.py3
+./root-plot.py3 x_min x_max n_bin x_title y_title data_filename
 ```
 
-とすると``histo.png``という画像ファイルができるので
+という引数で起動する。
+x_titleはヒストグラム横軸のタイトルとなる。
+
+出力する画像ファイル名はdata_filename + ".png"となるようにしている。
+
+上で作ったデータファイル(``data``というファイル名で保存したとして)
+
+```console
+./root-plot.py3 -10.0 10.0 200 value count data
+```
+とすると``data.png``という画像ファイルができるので
 
 ```
-cp histo.png ~/public_html
+cp data.png ~/public_html
 ```
 
 でコピーして http://kenshu00.kek.jp/~guestNN/ （NNは各自の番号）
