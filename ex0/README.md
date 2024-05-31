@@ -38,7 +38,10 @@ drwxrwxr-x. 2 sendai sendai  99 Apr  6 09:46 ex2
 drwxrwxr-x. 2 sendai sendai  68 Apr  6 09:46 ex3
 drwxrwxr-x. 2 sendai sendai  38 Apr  6 09:46 ex4
 drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex5
+drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex6
+drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex7
 drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
+drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 linux-command
 -rw-rw-r--. 1 sendai sendai 367 Apr  6 09:46 README.md
 [sendai@kenshu00 ~]$
 ```
@@ -102,12 +105,11 @@ $HOME/binからシンボリックリンクをはって対処する。
 
 - requests (これはすでに使えるようになっている)
 - lxml (これもすでに使えるようになっている)
-- openpyxl (これと次のbs4をpip3コマンドで追加する)
-- bs4
+- bs4 (これもすでに使えるようになっている)
+- openpyxl (これをpip3コマンドで追加する)
 
 ```console
 [sendai@kenshu00 ~]$ pip3 install openpyxl --user
-[sendai@kenshu00 ~]$ pip3 install bs4      --user
 ```
 
 ``--user``を指定するとシステム領域(/usrなど)ではなくホームディレクトリ以下に
@@ -124,7 +126,6 @@ $HOME/binからシンボリックリンクをはって対処する。
 set -e 
 
 pip3 install openpyxl --user
-pip3 install bs4      --user
 ```
 
 正常にモジュールがセットできかたどうか確認する:
@@ -156,10 +157,7 @@ OS付属パッケージでセットされたモジュールも表示される
 DEPRECATION: The default format will switch to columns in the future. 
 You can use --format=(legacy|columns) (or define a format=(legacy|columns)
 in your pip.conf under the [list] section) to disable this warning.
-beautifulsoup4 (4.12.0)
-bs4 (0.0.1)
 et-xmlfile (1.1.0)
 openpyxl (3.1.2)
-soupsieve (2.3.2.post1)
 ```
 
