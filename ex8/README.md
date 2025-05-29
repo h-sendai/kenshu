@@ -30,6 +30,16 @@ TeX原稿からpdfファイルを作りそれを印刷して点検簿と
 
 ## 走らせかた
 
+日本の祝日情報は
+[JPHoliday](https://github.com/Lalcs/jpholiday)モジュールを
+使っているのでまずそれをセットする:
+
+```
+pip3 install jpholiday --user
+```
+
+セット後
+
 ```
 ./tenkenbo.py3
 ```
