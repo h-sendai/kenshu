@@ -12,10 +12,10 @@ set term pngcairo size 1200,800
 # 出力ファイル名の指定
 set output 'tsukuba-kion.png'
 # 横軸範囲の指定（指定しないと前後に余分な期間が追加される
-set xrange ["2023/1/1":"2023/12/31"]
+set xrange ["2024/1/1":"2024/12/31"]
 # グラフタイトルを指定
-set title '2023 Tsukuba Temperature (average, high, low)'
-set xlabel "2023年月日"
+set title '2024 Tsukuba Temperature (average, high, low)'
+set xlabel "2024年月日"
 set ylabel "℃"
 # プロット。グラフタイトルもつけてみる
 plot \
