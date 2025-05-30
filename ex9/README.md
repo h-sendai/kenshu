@@ -22,6 +22,11 @@
 
 ```console
 % xxd -r -p data.txt > data.bin
+
+% ls -l data.txt; ls -l  data.bin
+-rw-rw-r--. 1 user user 96 May 29 14:21 data.txt
+-rw-rw-r--. 1 user user 32 May 29 14:21 data.bin
+
 % file data.bin
 data.bin: data
 ```
