@@ -57,3 +57,23 @@ pip3 install jpholiday --user
 4. dviファイルを作るさいに作成されるログその他必要ないファイルを削除する
 (TeX原稿はあとで使うかもしれないので残しておく)。
 
+## 使用したモジュールの説明
+
+Linuxコマンドをpythonスクリプト内から走らせるには
+subprocessモジュールを使うことが多い。
+例題ではplatexコマンドをpythonスクリプト内から起動するために
+subprocessモジュールを使っている。
+
+コマンドを起動するには``subprocess.run()``メソッドを使う。
+走らせるコマンドは第1引数でリストで指定する。リストの最初の要素はコマンド名を
+指定する。コマンド引数が必要な場合はそのあとの要素で指定する。
+
+実行したコマンド結果の標準出力をキャプチャしたい場合は
+``capture_output = True``を指定する。
+
+例: date -u (現在時刻をUTCで表示するコマンド)
+
+```
+output = subprocess.run(['date', '-u'], capture_output = True)
+print(output.stdout.decode().strip())
+```
