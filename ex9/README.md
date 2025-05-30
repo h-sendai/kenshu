@@ -24,6 +24,7 @@
 % xxd -r -p data.txt > data.bin
 % file data.bin
 data.bin: data
+```
 
 fileコマンドは指定したファイルのタイプ(実行ファイル、Pythonスクリプトファイル等)
 を出力するコマンド。タイプが不明な場合はdataと出力される。
