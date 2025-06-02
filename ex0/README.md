@@ -40,6 +40,8 @@ drwxrwxr-x. 2 sendai sendai  38 Apr  6 09:46 ex4
 drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex5
 drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex6
 drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex7
+drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex8
+drwxrwxr-x. 2 sendai sendai  45 Apr  6 09:46 ex9
 drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 function
 drwxrwxr-x. 2 sendai sendai  39 Apr  6 09:46 linux-command
 -rw-rw-r--. 1 sendai sendai 367 Apr  6 09:46 README.md
