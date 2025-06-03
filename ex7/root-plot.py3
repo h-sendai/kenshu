@@ -4,7 +4,7 @@ import sys
 import random
 import ROOT
 
-# Usage: ./root-plot.py3 x_min x_max n_bin data_filename
+# Usage: ./root-plot.py3 x_min x_max n_bin x_title y_title data_filename
 def main():
     if len(sys.argv) != 7:
         print('Usage: ./root-plot.py3 x_min x_max n_bin x_title y_title data_filename')
