@@ -37,14 +37,19 @@ write-excel.py3を読んでみてどんなファイルができるか考える�
 
     ./write-excel.py3
 
-newfile.xlsxというファイルができていると思うのでそれを
-共有フォルダにコピーする。
+newfile.xlsxというファイルができているのでMicrosoft Excel
+プログラムで確認する。ファイルをコピーするには:
+
+### VirtualBoxで実習している場合
 
     cp newfile.xlsx /media/sf_vboxsf/
-    
-ホスト環境側で、共有フォルダに指定したフォルダに移動し、
-newfile.xlsxをエクセルで開いて、エクセルで読めるxlsx
-ファイルであることを確認する。
+
+### sshでサーバーにログインして実習している場合
+
+    cp newfile.xlsx ~/public_html/
+
+でコピーしたあと http://kenshu00.kek.jp/~guestNN/ にブラウザで
+アクセス、ファイルをクリックしてダウンロードする。
 
 ## excelファイルを読む
 
